@@ -45,7 +45,7 @@
 #
 #   headers = c(
 #     `Authorization` = 'Bearer secret_vxCZixTbzZn3eZzyk7QivNp8Si6nd1BHaVixHoKPX7U',
-#     `Notion-Version` = '2022-06-28',
+#     `Notion-Version` = notionVersion,
 #     `Content-Type` = 'application/json' )
 #
 #   res <- httr::PATCH(url = paste0("https://api.notion.com/v1/blocks/", notionR::normalizeChromePageIds("751bbfe32d5140569e116951c7a4bbb3"),"/children"),
@@ -78,6 +78,6 @@
 #
 # url <- "https://api.notion.com/v1/blocks/123123123123/children"
 #
-# response <- VERB("PATCH", url, add_headers('Notion-Version' = '2022-02-22'), content_type("application/octet-stream"), accept("application/json"))
+# response <- VERB("PATCH", url, add_headers('Notion-Version' = notionVersion), content_type("application/octet-stream"), accept("application/json"))
 #
 # content(response, "text")
